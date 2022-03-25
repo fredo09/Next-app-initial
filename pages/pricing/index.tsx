@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { MainLayout } from "./../../components/MainLayout";
+import { MainLayout } from "../../components/MainLayout";
 
-export default function Pricing() {
+export default function Pricing () {
   return (
     <MainLayout>
       <h1>pricing Page</h1>

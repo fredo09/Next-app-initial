@@ -1,5 +1,5 @@
 import React from "react";
-import { ActiveLink } from "./../ActiveLink";
+import { ActiveLink } from "../ActiveLink";
 
 import styles from "./Navbar.module.css";
 
@@ -27,7 +27,9 @@ export const Navbar = () => {
     <nav>
       <div className={styles["nav-container"]}>
         {menuItems.map((item) => {
-          return <ActiveLink text={item.text} href={item.href} />;
+          return (
+            <ActiveLink key={item.text} text={item.text} href={item.href} />
+          );
         })}
       </div>
     </nav>
